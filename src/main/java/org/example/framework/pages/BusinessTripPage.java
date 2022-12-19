@@ -12,7 +12,6 @@ public class BusinessTripPage extends BasePage {
     @FindBy(xpath = "//a[@title='Создать командировку' and text() = 'Создать командировку']")
     private WebElement createBTbutton;
 
-    @Step("Нажать на кнопку Создать командировку")
     public CreateBusinessTripPage createBusinessTrip() {
         waitUntilClickable(createBTbutton).click();
         return pageManager.getCreateBusinessTripPage();
